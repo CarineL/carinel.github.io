@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>The  Road to Equal Pay In Tennis</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+        <style>
+
+            .wrapper {
+                width:70%;
+                margin:0 auto;
+            }
+            .source{
+                color: gray;
+                font-size:.6em;
+            }
+
+            h1{
+                    font-family:Verdana,Arial,sans-serif;
+                    font-size:5.5em;
+                    font-weight:600; 
+                    text-align: center;
+                }
+            h2{
+                    font-family:Verdana,Arial,sans-serif;
+                    font-size:1.5em;
+                    font-weight:600; 
+                    text-align: center; 
+                }
+            h3{
+                    font-family:Verdana,Arial,sans-serif;
+                    font-size:.8em;
+                    font-weight:600; 
+                    text-align: center; 
+                }
+            p{
+                    font-family:Georgia,Helvetica,Arial,sans-serif;
+                    font-size:1.1em;
+                    line-height:1.5em;
+                    word-spacing:-1px;
+                }
+            .chart3{
+                   text-align: center;
+                }
+            <
+    /*TABLET*/
+
+        @media(max-width: 880px){}
+
+        /*MOBILE*/
+
+        @media(max-width:480px)
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>The Road to Equal<br>Pay In Tennis</h1>
+        <h2>Women made more than men at one point</h2>
+        <br>
+        <h3>By: Carine Lavache</h3>
+        <p>Serena Williams and Roger Federer both walked away with $3.7 million after winning the 2017 Australian Open- something not many athletic organizations can relate to. Tennis is a rare example of wage equality in professional sports, but it was not always the case. 
+        <br> <br>
+        Today, pay is equal in all four tennis majors, but from a historical context, it took quite some time to achieve. According to data from 1968 to 2015, the average of grand slam prize money between men and women increased steadily, with women earning less, before equalizing during the early 2000s. 
+    </p>
+    
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+
+//CHART 1
+
+$(function () {
+    $('#container').highcharts({
+
+        credits: {
+            enabled: false
+        },
+
+        exporting: { 
+            enabled: false 
+        },
+ 
+        title: {
+            text: 'Average Grand Slam Prize Money',
+            x: -20 //center
+        },
+      
+        xAxis: {
+            categories: ['1968','1969', '1970', '1971', '1972', '1973', '1974', '1975', '1976', '1977', '1978', '1979', '1980', '1981', '1982', '1983', '1984', '1985', '1986', '1987', '1988', '1989', '1990', '1991','1992', '1993', '1994', '1995', '1996', '1997', '1998','1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007','2008', '2009','2010','2011','2012','2013','2014', '2015'],
+            gridLineWidth:0
+        },
+        yAxis: {
+            title: {
+                text: 'Grand Slam Prize Money ($)'
+            },
+            gridLineWidth:0,
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valuePrefix: '$'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Women',
+            data: [3917, 5833, 8933, 5525,6925, 14375, 18875, 19500, 19000, 27167, 40275, 48475, 68625, 79850, 116875, 157500, 285250, 416800, 538133, 420835, 499223, 549794, 643308, 793250, 892500, 922500, 1062500, 1120750, 1171750, 1253875, 1321875, 1419625, 1493750, 1613750, 786625, 870463, 899750, 943405, 996250, 1095250, 1155000, 1377500, 1480000, 1575000, 1650000, 2032500, 2265000, 2520000],
+           
+
+        }, {
+            name: 'Men',
+            data: [10333, 18000, 26333, 18938, 20000, 26688, 39750, 41059, 45164, 66500, 77000, 79254, 84254, 100000, 150917, 191025, 354650, 438925, 582417, 453169, 511310, 605348, 768192, 852000, 951250, 982500, 1128750, 1185000, 1251625,1329500,1400500, 1491750, 1568125, 1679625, 801250, 885713, 915625, 954155, 1003750, 1095250, 1155000, 1377500, 1480000, 1575000, 1650000, 2032500, 2265000, 2520000],
+        }]
+    });
+});
+		</script>
+	
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+    <p>Male athletes earning more than female athletes is often discussed, but interestingly enough, there was a period of time when women in tennis actually earned more. After taking a year off, the Australian Open granted women $115,000 compared to the $103,857 awarded to men in 1987. In addition, $110,000 was granted to women while men received $105,000 in 1988.  </p>
+
+
+<!-- CHART 2 -->
+<script type="text/javascript">
+
+$(function () {
+    $('#chart-two').highcharts({
+        credits: {
+            enabled: false
+        },
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Years Women Made More than Men (Australian Open)'
+        },
+       
+        xAxis: {
+            categories: ['1989', '1988', '1987', '1985'],
+            title: {
+                text: null
+            },
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: null
+            },
+            gridLineWidth:0,
+            labels: {
+                enabled: false
+            },
+        },
+
+        tooltip: {
+            valuePrefix: '$'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: false,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: false
+        },
+        credits: {
+            enabled: false
+        },
+       
+        series: [{
+            name: 'Women',
+            data: [135000, {y:110000,color:'red'}, {y:115000,color:'red'}, 100000 ]
+        }, {
+            name: 'Men',
+            data: [140000, 105000,103875, 100000]
+        }] 
+    });
+});
+
+        </script>
+    </head>
+    <body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="chart-two" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+<p> A push for equal pay did not come without the help of some of tennis’ most popular faces. In a 2006 article written for The London Times, Venus Williams urged Wimbledon organizers to pay men and women equally and a year later, the change was made. She wrote, “I’m disappointed not for myself but for all of my fellow women players who have struggled so hard to get here and who, just like the men, give their all on the courts. Why does Wimbledon choose to place a lesser value on my championship trophy than that of the 2005 men’s winner Roger Federer?” 
+<br><br>
+The US Open became the first major to offer equal pay in 1973. Another commitment to parity did not come until 28 years later with the Australian Open offering equal pay in 2001. The French Open followed suit in 2006 and Wimbledon in 2007. 
+<br><br>
+As the battle of the sexes plays out in U.S. Soccer and most recently, USA Hockey, one thing is clear: the "impossible" is more than possible.  
+
+ </p>
+
+<!-- CHART 3 -->
+<div class="chart3"> 
+    <img src=img/EqualPayReachedGraphic.jpg>
+</div>
+<div class="source">
+    <p>Source: https://github.com/popovichN/grand-slam-prize-money/blob/master/tennis_pay.csv</p>
+</div>
+	</body>
+</html>
