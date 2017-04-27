@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+.highcharts-tooltip h3 {
+    margin: 0.3em 0;
+}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        credits: {
+            enabled: false
+        },
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+            type: 'bubble',
+            plotBorderWidth: 1,
+            zoomType: 'xy'
+        },
+
+        legend: {
+            enabled: false
+        },
+
+        title: {
+            text: 'When Equal Pay Was Reached'
+        },
+
+        subtitle: {
+            text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>'
+        },
+
+        xAxis: {
+            categories: [1973,2001,2006,2007],
+            gridLineWidth: 0,
+            labels: {
+                format: '{value}'
+            },
+             tooltip:{
+                valuePrefix: '$'
+            },
+            plotLines: [{
+                color: 'black',
+                dashStyle: 'dot',
+                width: 2,
+                value: "none",
+                label: {
+                    rotation: 0,
+                    y: 15,
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                                   },
+            
+            }]
+        },
+
+        yAxis: {
+            startOnTick: false,
+            endOnTick: false,
+            gridLineWidth:0,
+            title: {
+                text: 'Prize Money'
+            },
+            tooltip:{
+                valuePrefix: '$'
+            },
+            labels: {
+                format: '{value}'
+            },
+            maxPadding: 0.2,
+            plotLines: [{
+                width: 2,
+                value: 50,
+                label: {
+                    align: 'right',
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                    
+                    x: -10
+                },
+                zIndex: 3
+            }]
+        },
+
+        tooltip: {
+            useHTML: true,
+            headerFormat: '<table>',
+            pointFormat: '<tr><th colspan="2"><h3>{point.country}</h3></th></tr>' +
+                '<tr><th>Year:</th><td>{point.x}</td></tr>' +
+                '<tr><th>Prixe $:</th><td>{point.y}</td></tr>',
+            footerFormat: '</table>',
+            followPointer: true
+        },
+
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }
+        },
+
+        series: [{
+            data: [
+                { x: 1973, y:25000, name: 'US Open'},
+                { x: 2001, y:830500, name: 'Aus Open'},
+                { x: 2006, y:940000, name: 'Roland Garros'},
+                { x: 2007, y: 700000, name: 'Wimbledon'},
+          
+            ]
+        }]
+
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="height: 400px; min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+	</body>
+</html>
