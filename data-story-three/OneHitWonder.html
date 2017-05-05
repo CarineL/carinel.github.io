@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#chart2').highcharts({
+        credits: {
+            enabled: false
+        },
+
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Amount of Songs Per Artist'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Artists',
+            colorByPoint: true,
+            data: [{
+                name: '1 song',
+                y: 61.22,
+                sliced: true,
+                selected: true
+            }, {
+                name: '2 songs',
+                y: 15.88,
+            }, {
+                name: '3 songs',
+                y: 7.32
+            }, {
+                name: '4 songs',
+                y: 3.86
+            }, {
+                name: '5 songs',
+                y: 3.11
+            }, {
+                name: '6 songs',
+                y: 2.62
+            }, {
+                name: '7 songs',
+                y: 1.51
+            }, {
+                name: '8 songs',
+                y: .98
+            }, {
+                name: '9 songs',
+                y: .67
+            }, {
+                name: '10 songs',
+                y: .58
+            }, {
+                name: '>10 songs',
+                y: 2.26
+            }]
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="chart2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+	</body>
+</html>

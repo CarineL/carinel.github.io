@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>From The Beatles to Rihanna: A Breakdown of Pop Music</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+       
+        <style>
+
+            .wrapper {
+                width:80%;
+                margin:0 auto;
+            }
+
+            .source{
+                color: gray;
+                font-size:.6em;
+            }
+
+            #chart2heading{
+            	text-align: left;
+            	font-family: Helvetica;
+            	font-size:2.5em;
+
+            }
+
+            #chart3heading{
+            	text-align: left;
+            	font-family: Helvetica;
+            	font-size:2.5em;
+            }
+            #quote {
+            	font-family: Didot,Helvetica;
+            	font-size:1.8em;
+            	float:right;
+            	max-width:400px;
+            	padding-left: 20px
+            }
+
+            h1{
+                    font-family: Didot,Helvetica,Arial,sans-serif;
+                    font-size:4.5em;
+                    font-weight:300; 
+                    text-align: center;
+                }
+            h2{
+                    font-family:Didot,Helvetica,Arial,sans-serif;
+                    font-size:1.5em;
+                    font-weight:300; 
+                    text-align: center; 
+                }
+            h3{
+                    font-family:Didot,Helvetica,Arial,sans-serif;
+                    font-size:.8em;
+                    font-weight:600; 
+                    text-align: center; 
+                }
+            p{
+                    font-family:Times,Helvetica,Arial,sans-serif;
+                    font-size:1.1em;
+                    line-height:1.5em;
+                    word-spacing:-1px;
+                }
+            
+            <
+    /*TABLET*/
+
+        @media(max-width: 880px){}
+
+    /*MOBILE*/
+
+        @media(max-width:480px)
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>From The Beatles to<br> Rihanna:<br> A Breakdown of Pop Music</h1>
+        <h2>A 50-Year Analysis of Billboard’s “Year-End Hot 100” Rankings </h2>
+        <br>
+        <h3>By: Carine Lavache</h3>
+        
+        <script type="text/javascript">
+
+//CHART 1
+
+$(function () {
+    $('#container').highcharts({
+        credits: {
+            enabled: false
+        },
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Top 20 Artists'
+        },
+        
+        xAxis: {
+            categories: ['Katy Perry', 'R.Kelly', 'Eminem', 'Chicago', 'The Black Eyed Peas', 'Britney Spears','The Beatles','Pink','Kelly Clarkson','Usher','Whitney Houston','Taylor Swift','Beyonce','Stevie Wonder','Michael Jackson','Janet Jackson','Elton John','Mariah Carey','Rihanna','Madonna'],
+            gridLineWidth:0,
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            enabled:false,
+            min: 0,
+            gridLineWidth:0,
+            title: {
+                text: null,
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify',
+                enabled:false
+            } 
+
+        },
+
+
+        tooltip: {
+            valueSuffix: ' ',
+
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            enabled:false,
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Number of Songs',
+            data: [14, 15, 15, 15, 16, 16, 17, 17, 17, 18, 19, 19, 19, 22, 22, 23, 26, 27, 29, {y:35, color: '#A03636'}],
+            color:'#FF4233',
+        }]
+    });
+});
+        </script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+      <p>
+          So, how exactly did we go from “Hey Jude” to “Hey Mr. DJ?” <br><br> No matter what way you look at it, music has come a long way. Everything from country to hip hop to pop music has seen significant progression throughout the years. This can be seen by analyzing 50 years of Billboard’s “Year-End Hot 100” rankings, a list of the top 100 songs throughout one year. In a data set created by Kaylin Walker, rankings from 1965 to 2015 feature everyone from Vanilla Ice to the late Michael Jackson.<br><br> Out of a list of 5,101 artists, the top 20 ranged from having a total 14 to 35 songs appear on the list. Katy Perry rounded out the pack with 14 songs while Whitney Houston, Taylor Swift and Beyonce landed just in the middle with 19. Women continued to dominate at the top as well with Mariah Carey appearing 26 times, Rihanna following with 29 appearances, and Madonna with 35. 
+       </p>
+
+  <h2 id="chart3heading"> The Power of Madonna</h2>
+
+<!-- CHART 3 -->
+<script type="text/javascript">
+$(function () {
+    Highcharts.setOptions({
+        lang: {
+            thousandsSep: ''
+        }
+    });
+
+
+    $('#chart3').highcharts({
+        credits: {
+            enabled: false
+        },
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+            type: 'columnrange',
+            inverted: true
+        },
+
+        title: {
+            text: 'Career Spans of Top 20 Artists'
+        },
+
+        xAxis: {
+            gridLineWidth:0,
+            categories: ['Katy Perry','R. Kelly','Eminem','Chicago','The Black Eyed Peas', 'Britney Spears','The Beatles','Pink', 'Kelly Clarkson', 'Usher','Whitney Houston','Taylor Swift','Beyonce','Stevie Wonder','Michael Jackson','Janet Jackson','Elton John','Mariah Carey','Rihanna','Madonna']
+        },
+
+        yAxis: {
+            gridLineWidth:0,
+            title: {
+                text: null
+            }
+        },
+
+        tooltip: {
+     
+
+
+        },
+
+
+        legend: {
+            enabled: false
+        },
+
+        series: [{
+            name: 'Years',
+            color:'#FF4233',
+            data: [
+                
+                [2008, 2014],
+                [1994, 2007],
+                [2000, 2014],
+                [1970, 1990],
+                [2003, 2011],
+                [1999, 2011],
+                [1965, 1976],
+                [2000, 2013],
+                [2002, 2015],
+                [1997, 2015],
+                [1985, 2000],
+                [2007, 2015],
+                [2003, 2015],
+                [1966, 1986],
+                [1972, 2002],
+                [1986, 2000],
+                [1972, 1998],
+                [1990, 2013],
+                [2005, 2015],
+                [1984, 2006],
+            ]
+        }]
+
+    });
+
+});
+        </script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="chart3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<p id="quote"> "People say that I'm so controversial, but I think the most controversial thing I have ever done is to stick around." <br>- Madonna</p>
+<p>While Elton John has the longest career span of all 20 artists (26 years), Madonna succeeds him in overall rankings. John made 23 appearances to Madonna's 35. The self-proclaimed “Queen of Pop's” career spans just over 20 years. <br><br>Madonna’s longevity continues to spawn successful tours, album sales and accolades. While accepting the Woman of the Year Award at the 2016 Billboard Women in Music event, she said “ People say that I'm so controversial, but I think the most controversial thing I have ever done is to stick around."Madonna’s stardom was further enhanced thanks to her roles in films such as <i>Evita</i>, which she won the Golden Globe Award for Best Actress, and <i>Dick Tracy</i>. In addition, she has become the  best-selling female recording artist of all time by Guinness World Records selling 300 million records worldwide. <br></br> Of her 35 appearances, featured songs include “Like a Virgin” (1985), “Vogue” (1990), “Holiday” (1984), “Material Girl” (1985), “Don’t Tell Me” (2001) and “Hung Up” (2006). <br><br>With so much success to her name, not many were as lucky.
+</p> 
+
+<h2 id="chart2heading"> One-Hit Wonders</h2>
+    
+ <!-- CHART 2 -->
+        <script type="text/javascript">
+$(function () {
+    $('#chart2').highcharts({
+        credits: {
+            enabled: false
+        },
+
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Amount of Songs Per Artist'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Artists',
+            colorByPoint: true,
+            data: [{
+                name: '1 song',
+                y: 61.22,
+                sliced: true,
+                selected: true,
+                color: '#FF4233'
+            }, {
+                name: '2 songs',
+                y: 15.88,
+            }, {
+                name: '3 songs',
+                y: 7.32
+            }, {
+                name: '4 songs',
+                y: 3.86
+            }, {
+                name: '5 songs',
+                y: 3.11,
+            }, {
+                name: '6 songs',
+                y: 2.62
+            }, {
+                name: '7 songs',
+                y: 1.51
+            }, {
+                name: '8 songs',
+                y: .98
+            }, {
+                name: '9 songs',
+                y: .67,
+            }, {
+                name: '10 songs',
+                y: .58
+            }, {
+                name: '>10 songs',
+                y: 2.26
+            }]
+        }]
+    });
+});
+        </script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="chart2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+<p> The one-hit wonder lives on. While artists such as Stevie Wonder and Beyonce made it onto the list multiple times, others made just one appearance. <br><br>To be exact, 61.2 percent of the artists appeared one time. Among these artists is singer Amerie who made her one and only appearance with “1 Thing” in 2005. The late Amy Winehouse debuted with “Rehab” in 2007, and Biz Markie with “Just A Friend” in 1990. The second largest group had two songs (15.9 percent). 3.1 percent fell right in the middle with five songs and .6 percent had 10 songs. 2.3 percent appeared more than 10 times. <br><br> While longevity can be attributed to various factors such as luck or talent, perhaps composer Christopher Tin said it best. “It’s easy to be a one-hit wonder. It’s hard to stay relevant for more than a few years."  
+</p> <br><br><br><br>
+</div>
+<div class="source">
+    <p>Source: https://github.com/popovichN/grand-slam-prize-money/blob/master/tennis_pay.csv</p>
+</div>
+</body>
+</html>
